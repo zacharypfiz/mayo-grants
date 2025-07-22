@@ -1,0 +1,303 @@
+PI_NAMEs,PROJECT_TITLE,FISCAL_YEAR,ACTIVITY,PROJECT_NUM,ORG_NAME,ABSTRACT,FETCH_STATUS
+Francis Baffour; Hao Gong,AI-assisted quantitative photon-counting-detector CT imaging for cytogenetic risk prediction and treatment response in multiple myeloma,2025,R01,,,"PROJECT SUMMARY/ABSTRACT
+Focal bone marrow biopsies of the posterior iliac crest are the gold standard for diagnosing multiple
+myeloma, yet they do not reflect the spatial and genomic heterogeneity of the disease. Almost 25% of
+such patients do not have adequate samples for cytogenetic assessment need for risk stratification.
+This inconsistency in bone marrow sampling could result in falsely reassuring prognoses for patients
+with aggressive disease. Whole-body imaging presents an unrealized opportunity to derive image
+features in the bone marrow that reflect the cytogenetic diversity of clonal plasma cells. Several
+advanced imaging modalities are used for diagnosis and disease management. An alternative
+approach is to optimize one imaging modality for these tasks. Recently FDA approved photon-
+counting detector (PCD)-CT has technological advancements that permit simultaneous bone marrow
+composition quantification and lytic lesion detection throughout the whole skeleton. In addition, the
+quantitative accuracy of the spectral data can be used to determine changes in bone marrow and
+intralesional fat fraction, an indicator of treatment response. This proposal’s specific objective is to
+develop imaging based cytogenetic risk stratification models and a quantitative PCD-CT mechanism
+to accurately measure bone marrow composition. In Aim 1, we will develop and validate a deep-
+learning (DL) imaging-model for multiple myeloma cytogenetic risk stratification. In Aim 2, we will
+develop and validate physics-informed DL-assisted material decomposition to derive imaging
+biomarkers of multiple myeloma. In Aim 3, we will determine the clinical feasibility of the DL
+cytogenetic risk prediction model and imaging biomarkers for multiple myeloma prognostication and
+assessing response to therapy. This PCD-CT protocol will be a “one-stop shop” multiple myeloma
+tool for disease detection, prognostication, and treatment response assessment. The innovation of
+this proposal includes our development of an imaging protocol that leverages the many technical
+improvements of PCD-CT, AI image processing, and AI modeling to develop biomarkers from bone
+marrow composition. Secondly, a PCD-CT-based AI risk prediction model will be positioned to
+supplant focal invasive approaches that may not offer a comprehensive assessment of the entire
+heterogeneity of disease burden.",SUCCESS
+Gregory Worrell,Reliable Seizure Prediction Using Physiological Signals and Machine Learning,2025,R01,,,"For most individuals living with epilepsy, seizures are relatively infrequent events occupying a small fraction of
+their life. Despite spending as little as 0.01% of their lives having seizures (typically only minutes per month),
+people with epilepsy take anti-seizure drugs (ASD) daily, suffer ASD related side effects, and spend their lives
+dreading when the next seizure will strike. The apparent randomness of seizures is associated with significant
+psychological consequences. In addition, despite daily ASD, approximately 1/3 of patients continue to have
+seizures. We hypothesize that epilepsy can be more effectively treated, both the seizures and their
+psychological impact, by providing patients with real-time seizure forecasting.
+There is strong evidence that focal epilepsy is associated with a variable seizure risk that may enable adaptive
+therapy targeting periods of high seizure probability. Periods of low seizure probability could require lower
+ASD doses, reducing exposure and side effects. We propose that high seizure probability states will respond to
+adaptive electrical brain stimulation (aEBS). In addition, patients could alter their activities during periods of
+high seizure probability to reduce injury and manage their ASD and activities.
+The hypotheses driving this proposal are that 1.) seizures can be prevented (reduced incidence) by targeted
+EBS therapy during the pre-ictal state 2.) seizures are not random events, and that brain states associated with
+low and high seizure probability can be reliably classified using machine learning methods applied to
+physiologic signals and used to adaptively change EBS parameters. 3.) Furthermore, we propose forecasting
+can be improved using multi-modal features beyond passive iEEG recordings, including active brain probing
+with electrical stimulation (impedance & evoked potentials), core temperature, ECG and serum immunological
+markers. Goal: Develop reliable seizure forecasting (>90% sensitivity) with few false positives (<1% time in
+warning) and demonstrate modulation of seizure risk and reduction of focal seizures using aEBS.",SUCCESS
+ANDREW RULE; JENNIFER ST SAUVER,A population-based study of deep learning derived organ and tissue measures for accelerated aging using repurposed abdominal CT images,2025,R01,,,"PROJECT SUMMARY
+There has been a dramatic increase in the number of persons living with reduced physical function and with
+aging-related chronic conditions. If we compare chronological age (calendar-based age) with biological age
+(changes at the cellular, tissue, organ, and system levels), we can classify persons as aging faster
+(accelerated aging) or slower (successful aging) than their peers. Methods have been developed to measure
+biological age based on DNA methylation, telomere length, and blood biomarkers. However, such measures
+may not accurately reflect organ- and tissue-level changes from aging. A multi-organ/tissue approach is
+needed to identify comprehensive age-related structural changes before signs, symptoms, or clinical
+diagnoses occur. Abdominal computed tomography (CT) has widespread use in the general population (35%
+of adults ages 20-89 years in an 11-year period). Quantitative measures of the organs and tissues on
+abdominal CT may predict organ-specific diseases, or in combination, may be used to calculate biological age
+and predict the more global outcomes of hospitalization and mortality. Therefore, our central hypothesis is that
+deep learning (DL) models applied to abdominal CTs can quantify structural features of the organs and tissues
+to identify persons with accelerated aging at high-risk for organ-specific disease, hospitalization, and death.
+The Rochester Epidemiology Project record-linkage system provides access to a general population archive of
+images for 423,081 abdominal CTs and to comprehensive medical record data among 181,187 adults (ages
+20-89 years) between 2010-2020. Our team has already developed and validated DL tools to measure liver,
+kidney, aorta, fat, muscle, and bone on abdominal CT images. We will leverage these resources to 1) establish
+percentiles of abdominal CT biomarkers from both healthy and general population samples; 2) determine the
+risk of organ-specific clinical disease by abdominal CT biomarkers in the general population; and 3) determine
+the risk of hospitalization and death associated with abdominal CT measures in the general population. If
+successful, application of DL tools to abdominal CT images will enrich the characterization of age-related
+health risks without additional testing burden. Subclinical abdominal CT biomarkers may also inform the
+biology of aging and early disease, improve disease classification, and provide opportunities for early
+intervention.",SUCCESS
+Hao Gong; Cynthia McCollough,Diagnostic performance assessment and dose optimization using patient CT images: Application to deep-learning CT reconstruction and denoising technologies,2025,R01,,,"PROJECT SUMMARY/ABSTRACT
+Half of the man-made radiation exposure to the U.S. population can be attributed to CT. Thus, stakeholders
+have invested heavily in the reduction of CT doses. Recently, CT Deep Learning Reconstruction or Denoising
+(DLRD) techniques have become available that claim to enable dose reduction in CT, just as CT iterative
+reconstruction (IR) claimed before it. Like DLRD, IR showed dramatic apparent increases in image quality by
+reducing image noise. Subsequent clinical studies found that true dose reductions capabilities for IR were only
+20-25% in soft tissues and organs. Greater dose reductions resulted in compromised signal detectability for
+low-contrast lesions (e.g., liver metastases). Now, DLRD algorithms are being used in clinical practice and
+appear to yield image quality superior to IR. But again, we are finding that excessive radiation dose reduction
+can introduce new artifacts and compromise lesion detectability. Our overall objective is to develop and
+validate methods that can quantitatively determine CT protocols that deliver the needed diagnostic
+performance at the lowest patient dose for any scanner model or reconstruction algorithm.
+ In our first two competitive award periods, we developed robust Channelized Hotelling model observers
+(MOs) to quantify diagnostic performance using low contrast objects within a uniform phantom and validated
+the work with large scale reader studies for both filtered back projection and IR images. We are deploying
+these tools under EB028936 to allow robust dose optimization by CT users. However, there remain challenges.
+First, low-contrast phantoms used with most MOs are too simple. Second, highly realistic lesion and noise
+insertion tools require use of proprietary projection data and access to manufacturer software tools. Third, MOs
+must be extended to work with DLRD methods and be generalizable to any scanner. The proposed work will
+use patient image data, obviating the need for projection data, use our developed deep learning (DL)-MOs to
+achieve a scalable solution for performance assessment, and be generalizable to any algorithm or scanner.
+ The goal of this renewal application is to develop robust DL-MO tools to efficiently predict diagnostic
+performance for images created with DLRD methods. We will accomplish this through three specific aims:
+1. Develop and validate disease-insertion and low-dose-simulation tools for CT DLRD techniques.
+2. Develop and validate DL-MO tools to quantify mean diagnostic performance for DLRD methods.
+3. Extend DL-MO methods to estimate performance variations across readers.
+ This work is the first to develop and use DL-MOs as accurate and efficient surrogates of human readers to
+characterize task-specific performance of DLRD methods in CT using patient images. The resultant performance
+assessment engine will facilitate training / testing of DL-based noise reduction algorithms and optimizing CT
+protocols and doses. These significant capabilities will ensure that diagnostic performance and the lifesaving
+diagnostic information obtained from CT are not compromised in DLRD-processed images.",SUCCESS
+Peter Brunner; Kai Miller; Gregory Worrell,An Ecosystem of Technology and Protocols for Adaptive Neuromodulation Research in Humans,2025,U01,,,"Project Summary/Abstract
+ Neurological and psychiatric disorders affect millions of people in the United States and worldwide, and produce
+a third of all health care costs. Recent research has produced encouraging evidence that adaptive neuromodulation
+can induce nervous system plasticity that produces long-lasting improvements in certain neurological disorders
+such as stroke. At the same time, it is becoming increasingly clear that the technologies that support these
+demonstrations remain painfully inadequate and inaccessible for both research and clinical application: current
+non-invasive technologies are typically imprecise; and current invasive technologies, which are more precise, are
+currently only available with serious restrictions for human use. Moreover, all of the few existing neuromodulation
+platforms for human use require substantial expertise in diverse areas of engineering, physiology, and regulatory
+domains that is not available to most groups. This lack of availability of sufﬁciently capable and readily useable
+neuromodulation technologies greatly impedes the development, application, and optimization of new adaptive
+protocols for improving symptoms of devastating neurological and psychiatric disorders.
+ The purpose of the project proposed here is to address this critical issue by developing, validating, and widely
+sharing with the community an easy-to-use adaptive neuromodulation ecosystem (comprised of technology and
+protocols) that is optimized for the needs of invasive basic and clinical research. We will validate this ecosystem in
+a canine model, and disseminate it with appropriate documentation to other scientists and clinicians through three
+project-related test sites and three workshops. In accord with this objective, we will:
+1. Develop a general-purpose hardware/software neuromodulation platform for invasive neuromodulation research
+2. Develop and validate an ecosystem for adaptive neuromodulation research and clinical application
+3. Disseminate this ecosystem of technologies and protocols
+ Achieving these three aims will create, validate, and disseminate the ﬁrst comprehensive ecosystem that
+facilitates the conception, development, and clinical application of invasive adaptive neuromodulation protocols.
+We expect that the availability of this ecosystem will greatly increase activities in basic and clinical neuromodulation
+research that will lead to new understanding of the neural underpinnings of normal and abnormal function and will
+thereby accelerate the development of novel adaptive neuromodulation protocols to improve treatment for many
+devastating neurological disorders.",SUCCESS
+Aleksandar Denic; Timothy Kline,Artificial Intelligence-Based Methods to Characterize Kidney Macrostructure from Pre- and Post-Nephrectomy Computed Tomography Images,2025,R01,,,"PROJECT SUMMARY/ABSTRACT
+The prevalence and burden of chronic kidney disease (CKD) is increasing worldwide. Patients who undergo
+radical or partial nephrectomy for kidney cancer resemble the general population with comorbidities, but with
+the difference that a majority undergo pre- and post-surgery abdominal imaging. Despite successful surgical
+tumor removal, there is a concern for future progressive CKD. Following nephrectomy, the unaffected kidney
+undergoes compensatory hypertrophy, and the degree of hypertrophy and kidney function decline depend on
+the comorbidity burden and the amount of the removed kidney tissue. With the recent advances in artificial
+intelligence (AI)--based quantification of kidney volumes from CT scans, there is an opportunity to evaluate
+automated imaging biomarkers as prognostic tools. There are also algorithms that quantify the number and
+volume of simple parenchymal cysts and many radiomic/texture features. The Co-Principal Investigators in this
+program are uniquely equipped for the proposed studies. Dr. Denic has expertise in kidney micro- and macro-
+anatomy and advanced biostatistical skills. Dr. Kline has expertise in AI and developing advanced image
+processing techniques. The central hypothesis of this proposal is that macrostructural findings on
+imaging of the retained (non-operated) kidney after radical or partial nephrectomy are prognostic for
+progressive CKD. In Aim 1, we will determine whether the degree of compensatory hypertrophy in the
+retained kidney after nephrectomy predicts progressive CKD. Using a recently created deep learning algorithm
+we developed, we will quantify the kidney, cortex, and medullary volumes in pre-surgery and follow-up CT
+scans (at median 1-year post-surgery). From these volumes, we will calculate the degree of compensatory
+changes in kidney volumes and assess their association with baseline comorbidities and microstructural
+measures. Finally, we will develop models to predict progressive CKD. In Aim 2, we will first optimize and
+finalize training of the model to quantify cysts and their size in CT images and develop postprocessing steps to
+separate cortical from medullary cysts. We will then develop models to assess whether the number and size of
+cysts (overall, cortical, medullary) in the retained kidney in pre-surgery scans, and changes in number and size
+of cysts (overall, cortical, medullary) in the retained kidney over 1-year post-surgery, can predict progressive
+CKD. In Aim 3, we will determine whether novel radiological imaging texture features on pre-surgery scans are
+reflective of microstructural measures of nephron size and nephrosclerosis and whether kidney texture
+features on follow-up CT scans predict progressive CKD. This research program will be facilitated by Mayo
+Clinic’s outstanding clinical and research environment at all three sites dedicated to improving patient care.
+The goal is to develop a tool that can guide clinical decision-making in everyday practice, and that can help
+clinicians in improving their care of patients at an individual level by assessing the future risk of CKD.",SUCCESS
+Hugo Botha,Automated speech assessment for diagnosis of FTD spectrum disorders,2025,R01,,,"PROJECT SUMMARY/ABSTRACT
+Alzheimer’s Disease and Related Dementias (ADRDs) are major causes of death and disability in the United
+States, with the number of adults with ADRDs projected to reach 13 million by 2050. Among these, the
+frontotemporal degeneration (FTD) spectrum disorders are among the most common causes of dementia in
+younger individuals (<60y), resulting in high social and economic burden. Diagnosis of FTD is challenging,
+typically requiring subspeciality expertise that is not widely available in a timely manner. Many FTD spectrum
+disorders manifest in speech, and speech changes can help differentiate FTD subtypes. Prior research
+supports the clinical utility of speech-based prediction of FTD presence and subtype. Unfortunately, rigor of
+these prior studies is limited for several reasons, including small sample sizes, failure to follow predictive
+modeling best practices, use of research grade speech recordings, and lack of prospective validation. We
+propose a highly innovative approach to speech-based prediction of FTD that avoids the weaknesses of prior
+work. Central to our approach is the insight that FTD may be too rare to use powerful deep learning models,
+but the abnormal speech characteristics seen in FTD are also seen in other disorders. Training a model to
+recognize these characteristics in FTD does not require limiting the dataset to FTD patients. We plan use this
+to our advantage. In Aim 1 we will use a self-administered, web-based speech exam to create a large dataset
+of all disorders seen in our speech clinic. Recordings will be made in a standard exam room using mobile
+phones or tablets. Our expert speech and language pathologist will annotate the recordings with perceptual
+speech characteristics, such as abnormal rate or vocal strain. The large sample size will enable us to use deep
+learning for what it excels at – trainable feature extraction optimized for the task at hand. We will follow
+predictive modeling best practices, including use of a validation set. In Aim 2 we will apply these trained
+models in a large cohort spanning the FTD spectrum and extract the data from the last layer in the network,
+just before it makes its prediction. This is a low dimensional representation of the speech signal, but which
+contains the information necessary for predicting perceptual characteristics. We will use these representations
+to develop a nearest neighbor classifier for FTD. Essentially, the model matches a new case to similar ones in
+a labeled set based on the low-dimensional representation and uses the neighborhood to assign a label for the
+new case. Finally, in Aim 3 we will combine our self-administered speech exam and the models from Aims 1
+and 2 into a single tool and perform a prospective validation study to test performance in a clinical setting. The
+predicted increase in ADRDs and lack of access to specialists will necessitate a shift in clinical practice from a
+few expert centers to a distributed system of non-expert providers. The digital tool we propose meets this
+challenge head on through scalable and easy to use automated speech analysis and prediction of FTD.",SUCCESS
+Ann Oberg,Management and Data Coordination Unit for PCDC,2024,U24,,,"PROJECT SUMMARY
+Pancreatic ductal adenocarcinoma (PDAC) is a highly lethal cancer, partially owing to lack of effective
+biomarkers and/or screening strategies. The 5-year survival of patients with localized PDAC is 39% compared
+to 3% in patients diagnosed with metastatic disease, which indicates that detecting PDAC at early stage
+positively impacts survival. A centrally curated/managed multi-institution biospecimen resource containing
+prospectively collected, well-annotated biospecimens representing clinically relevant, diverse PDAC screening
+populations is desperately needed. The overall goal of the Pancreatic Cancer Detection Consortium (PCDC)
+Management and Data Coordinating Center (MDCU) is to facilitate the PCDC’s role in developing and utilizing
+high quality, well annotated samples for PDAC biomarker discovery, triage, pre-validation, and validation. The
+PCDC consortium is composed of multiple U01 Research Units (RU) and the MDCU, with NCI cooperation and
+central biospecimen storage at the NCI Frederick Central Repository. We will leverage our expertise and
+knowledge gained during the previous grant cycle to reinforce existing and new PCDC initiatives through
+expanded coordination, and strengthening the infrastructure to support management of the PCDC Reference
+Sets and Signature Protocols. Our Specific Aims are 1) To provide outstanding and timely administrative
+coordination and logistical support for the Pancreatic Cancer Detection Consortium. 2) To strategically plan,
+coordinate and implement the development of a well-annotated, uniformly collected and managed central PCDC
+biorepository and database. 3) To provide the highest quality biostatistical leadership of PCDC collaborative
+experimental design, study conduct, and analysis, and to provide biostatistical consultation to PCDC RUs. The
+strengths of the MDCU are the breadth and depth of knowledge and understanding of PDAC provided by MDCU
+personnel who will innovatively apply time tested infrastructure tools and strategies to consortium management,
+and our vast experience in enhancing the scientific needs of PCDC collaborative research. Our multidisciplinary
+team is committed to continue its leadership and contribution to the PCDC organization to advance the early
+detection of pancreatic cancer.",SUCCESS
+Matthew Carlson; Shuai Leng,High-resolution in vivo imaging of inner ear using photon-counting-detector computed tomography and artificial intelligence,2025,R01,,,"PROJECT SUMMARY/ABSTRACT
+Disorders of the inner ear manifest as an array of audiovestibular diseases and constitute a significant public
+health burden, affecting millions of individuals and costing billions of dollars each year. As the population ages
+worldwide, the disease prevalence is intensifying, necessitating immediate action to address this growing public
+health issue. CT imaging of the inner ear is a central component of the diagnostic evaluation of patients
+presenting with vestibular symptoms, hearing loss, autophony, and chronic otitis media. As a part of this
+evaluation, accurate detection and characterization of potential labyrinthine dehiscence is imperative to
+definitively rule in or rule out disease, inform patient counseling, guide shared clinical decision-making, quantify
+the risk and potential outcome associated with surgical intervention, and further understand the natural history
+of disease. Notably, current in vivo imaging techniques are unable to consistently decipher thin versus truly
+dehiscent labyrinthine bone. Further, current CT imaging is not able to fully characterize dehiscence morphology
+(shape, size, and surface area). As such, high-quality, high-resolution, artifact-free in vivo imaging is critically
+needed for the reliable diagnosis and management of inner ear disorders such as superior semicircular canal
+dehiscence syndrome and cholesteatomatous labyrinthine fistula.
+To address this unmet clinical need, we propose to develop high-fidelity clinical imaging techniques for the inner
+ear using photon counting detector computed tomography (PCD-CT) and advanced artificial intelligence (AI)
+algorithms. Our team has been at the forefront of PCD-CT development and its clinical translation, and has an
+established track record of strong multidisciplinary collaborative innovation in this space. Building upon our
+successful prior work, we will harness the power of AI – in synergy with PCD-CT – to reduce image noise,
+improve spatial resolution, and reduce radiation dose for CT imaging of the inner ear. We will develop and
+validate these techniques with cadavers, and in vivo patient CT exams.
+The innovation of our proposal lies in the synergy of PCD-CT and advanced AI algorithms for spatial resolution
+improvement, noise and dose reduction, and a cadaver library of normal and labyrinthine thinning and
+dehiscence specimens that will enable iterative protocol optimization of ultra-high-spatial-resolution inner ear
+imaging. Without the proposed techniques, PCD-CT, while impressive, remains limited by noise, image artifacts,
+and radiation dose. Further, under controlled conditions using cadaveric specimens, definitive evidence of the
+impact of the developed techniques will be obtained. Successful completion of this proposal will have a significant
+impact on patients with inner ear diseases, allowing high-fidelity imaging with improved diagnostic accuracy and
+individualized patient management. In addition, the technical innovations for noise reduction, super-resolution,
+and dose reduction developed in the proposal will benefit inner ear imaging tasks beyond dehiscence, including
+direct visualization of the interscalar cochlear partition, and can be readily applied to the middle ear.",SUCCESS
+Ananth Madhuranthakam,Next-Generation Whole-Body MRI for Detection and Assessment of Therapy Response in Bone Lesions,2025,R01,,,"Project Summary
+ Bone lesions from solid tumors such as breast, prostate, or kidney cancers, tumors originating in the bone
+marrow such as multiple myeloma (MM), or other non-malignant musculoskeletal pathologies can occur
+anywhere in the skeleton. These bone lesions cause pain and spinal cord compressions, leading to pathologic
+fractures and paralysis, thereby diminishing the patient's quality of life. Current therapies rely on diagnosing
+these bone lesions by whole-body X-ray or bone scans, which only identify them at advanced stages. While
+whole-body magnetic resonance imaging (WBMRI) is recommended for pretreatment assessment (e.g., in
+MM), MRI is often limited to spine and pelvic regions in practice to minimize patient discomfort, compromised
+image quality from geometric distortion, and high costs due to prolonged acquisition times. To address this
+unmet clinical need, we developed a novel WBMRI technique: `Dual-Echo T2-weighted acquisition for
+Enhanced Conspicuity of Tumors' (DETECT), for improved lesion visualization by simultaneously separating
+the confounding signals of fat and fluid. Compared to WBMRI with diffusion-weighted imaging (DWI), single-
+shot DETECT increased lesion detection (>40%) in considerably shorter scan times (<10 min) and without
+image distortions. This method also improved robustness to motion in the thoracic and abdomen regions,
+however, it suffers from image blurring due to T2-decay particularly in spine and extremities, limiting the
+diagnostic performance. In the current proposal, we will address these limitations by developing the next-
+generation WBMRI-DETECT using an efficient combination of single-shot and multi-shot acquisitions. DETECT
+also generates fat signal for quantitative fat fraction (FF) maps that can be used as a prognostic biomarker in
+MM, since tumor cells replace fat, a major constituent of bone marrow. This method also led us to develop a
+DETECT-based DWI technique for accurate measurement of apparent diffusion coefficient (ADC). The specific
+aims are: 1) To develop an integrated WBMRI using single-shot and multi-shot DETECT, along with
+quantitative FF maps; 2) To develop a DETECT-based DWI with accurate ADC measurements; and 3) To
+evaluate the integrated WBMRI, including DETECT-DWI and contrast-enhanced perfusion, for efficient bone
+lesion detection and therapy response assessment. We will use bone lesions in MM as the proof-of-concept
+disease to achieve these project goals. The successful outcome of this project will be an efficient WBMRI
+protocol with accurate FF and ADC measures as imaging biomarkers, validated in detection and measuring
+therapy response in MM patients. This WBMRI in combination with contrast-enhanced MRI including perfusion,
+will be an excellent cost-effective and practical approach (<45 minutes of table time) for widespread use in
+clinical practices across the world. This will benefit MM patients and patients suffering from other bone lesions,
+including pediatric patients during long follow-ups, without the drawbacks of PET/CT. This will provide relevant
+clinical information for treatment decisions to positively impact patients' quality of life and overall survival.",SUCCESS
+Andrea Cheville,"Project HoPe: Achieving Home Discharge for institutionally-bound Patients with PROMs, AI, and the EHR",2025,R01,,,"Unnecessary discharges from a hospital to a skilled nursing facility (SNF) are costly and may accelerate
+patients’ functional losses and requirement for long-term institutionalization. Patients with Alzheimer's Disease
+and Alzheimer's Disease Related Dementias (AD/ADRD) and other types of cognitive impairment are uniquely
+disadvantaged by this status quo in that they are twice as likely to be hospitalized, four times more likely to be
+discharged to SNFs with less than 50% returning to their homes. This situation can be addressed as it is the
+product of a typically rushed discharge planning process with inadequate time to discover, much less address,
+a patient’s barriers to home discharge. Recent reports suggest that as many as a third of patients dismissed to
+SNFs, including those with AD/ADRD, could return directly home if their post-acute care (PAC) needs and
+barriers were anticipated and addressed. Several key deficits prevent broad realization of a patients’ potential to
+discharge directly home, or their Home PAC Potential (HoPe). These include a limited ability to: 1) quantify
+factors that determine PAC needs, 2) identify and address remediable barriers to home discharge, and 3)
+mobilize stakeholders for advancement of individualized discharge plans. Collectively, these deficits prevent
+the timely initiation of acute care services that can realize a patient’s potential for home discharge, with PAC as
+necessary. Rehabilitation-focused, hospital-Home Healthcare Agency (HHA) partnerships have established that
+interdisciplinary care plans enacted early in a hospital stay with patient and caregiver involvement increase the
+likelihood of a patient’s return home. Our team developed an Epic electronic health record (EHR)-based
+discharge planning system that triangulates EHR, patient reported outcomes (PROs), and social determinants
+of health data to identify HoPe barriers and direct needs-matched rehabilitation service delivery. A pilot of the
+system among 358 patients increased the home discharge rate by over 25% and revealed high user
+acceptability. However, the pilot also identified the need to improve addressing of cognitive impairments,
+targeting of high-yield HoPe barriers, and engagement of non-clinical stakeholders. We propose to address
+these limitations by pursuing three Specific Aims: 1) Develop a low-burden computerized adaptive test PRO to
+assess the domains of functional cognition relevant to a safe home discharge; 2) Develop a machine learning
+algorithm to prioritize actionable HoPe barriers and estimate the degree of change needed for home discharge;
+and 3) Apply user-centered design principles to refine the EHR discharge planning system for optimal usability
+and enhanced EHR portal patient, caregiver, and HHA staff access. Our goal is to both integrate and pilot
+these deliverables in a mature and optimally usable EHR discharge planning system, and to evaluate the
+feasibility and acceptability of its implementation. We anticipate that the system will be scalable, and amenable
+to inter-institution transfer for testing in a multi-site pragmatic trial.",SUCCESS
