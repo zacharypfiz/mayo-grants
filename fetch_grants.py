@@ -58,7 +58,8 @@ def fetch_mayo_grants():
             "org_names_exact_match": ["MAYO CLINIC ROCHESTER"],
             "include_active_projects": True,
             "fiscal_years": [2022, 2023, 2024, 2025],
-            "activity_codes": gold_tier_types
+            "activity_codes": gold_tier_types,
+            "exclude_subprojects": True
         },
         "include_fields": fields,
         "offset": 0,
@@ -199,6 +200,42 @@ def extract_spending_categories(categories):
     
     return "; ".join(cat_names)
 
+def update_readme(stats):
+    """Update README with current statistics"""
+    if not stats:
+        return
+    
+    # Read current README
+    try:
+        with open("README.md", "r", encoding="utf-8") as f:
+            content = f.read()
+    except FileNotFoundError:
+        print("README.md not found, skipping update")
+        return
+    
+    # Update statistics section
+    new_stats = f"""## Key Statistics
+- **{stats['total_grants']} hiring-relevant grants** identified
+- **${stats['total_funding']:,.0f} total funding** (${stats['avg_funding']:,.0f} average per grant)
+- **{stats['r01_count']} R01 grants** ({stats['r01_count']/stats['total_grants']*100:.0f}%) - independent researchers with hiring authority
+- **{stats['center_grants']} P30/P50 center grants** - highest computational hiring probability"""
+    
+    # Replace the existing Key Statistics section
+    import re
+    pattern = r"## Key Statistics.*?(?=## [A-Z]|\Z)"
+    if re.search(pattern, content, re.DOTALL):
+        updated_content = re.sub(pattern, new_stats + "\n\n", content, flags=re.DOTALL)
+    else:
+        # If section doesn't exist, add it before Target Recommendations
+        target_pattern = r"(## Target Recommendations)"
+        updated_content = re.sub(target_pattern, f"{new_stats}\n\n\\1", content)
+    
+    # Write back to file
+    with open("README.md", "w", encoding="utf-8") as f:
+        f.write(updated_content)
+    
+    print("✓ Updated README.md with current statistics")
+
 def save_to_csv(projects, filename):
     """Save projects to CSV file"""
     if not projects:
@@ -222,7 +259,7 @@ def save_to_csv(projects, filename):
 def analyze_results(projects):
     """Analyze and display grant statistics"""
     if not projects:
-        return
+        return {}
     
     print(f"\nGrant Analysis:")
     print("=" * 40)
@@ -255,6 +292,16 @@ def analyze_results(projects):
     
     if total_funding > 0:
         print(f"\nFunding: ${total_funding:,.0f} total, ${total_funding/len(projects):,.0f} average")
+    
+    # Return stats for README update
+    return {
+        "total_grants": len(projects),
+        "total_funding": total_funding,
+        "avg_funding": total_funding / len(projects) if len(projects) > 0 else 0,
+        "top_grant_types": sorted(activity_counts.items(), key=lambda x: x[1], reverse=True)[:3],
+        "r01_count": activity_counts.get("R01", 0),
+        "center_grants": activity_counts.get("P30", 0) + activity_counts.get("P50", 0)
+    }
 
 def main():
     """Main function"""
@@ -274,7 +321,8 @@ def main():
         return
     
     save_to_csv(processed, "mayo_grants.csv")
-    analyze_results(processed)
+    stats = analyze_results(processed)
+    update_readme(stats)
     
     print(f"\nSuccess! {len(processed)} hiring-relevant grants saved to mayo_grants.csv")
 
