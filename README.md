@@ -4,7 +4,7 @@
 This project identifies optimal grant opportunities at Mayo Clinic Rochester for computational scientists and software engineers.
 
 ## Files
-- `mayo_grants.csv` - 390 hiring-relevant Gold Tier grants
+- `mayo_grants.csv` - Hiring-relevant Gold Tier grants
 - `fetch_grants.py` - Script to fetch fresh data from NIH API
 - `grant_types.txt` - Analysis of all grant types at Mayo Rochester
 - `readme.md` - This documentation
