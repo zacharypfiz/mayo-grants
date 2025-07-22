@@ -1,0 +1,118 @@
+Unique Grant Types from Mayo Clinic Rochester - Live API Data
+=================================================================
+Data Source: NIH RePORTER API (Live Data)
+Total Grants: 818
+Date Generated: 2025-07-21 23:24:32
+
+Grant Types (Alphabetical):
+------------------------------
+F30      :   6 grants ( 0.7%)
+F31      :  10 grants ( 1.2%)
+F32      :   2 grants ( 0.2%)
+F99      :   1 grants ( 0.1%)
+K01      :  12 grants ( 1.5%)
+K07      :   1 grants ( 0.1%)
+K08      :  11 grants ( 1.3%)
+K12      :   2 grants ( 0.2%)
+K23      :  22 grants ( 2.7%)
+K24      :   2 grants ( 0.2%)
+K25      :   1 grants ( 0.1%)
+K76      :   1 grants ( 0.1%)
+K99      :   7 grants ( 0.9%)
+KL2      :   1 grants ( 0.1%)
+N01      :   1 grants ( 0.1%)
+P01      :  16 grants ( 2.0%)
+P20      :   3 grants ( 0.4%)
+P30      :  43 grants ( 5.3%)
+P50      :  45 grants ( 5.5%)
+R00      :   4 grants ( 0.5%)
+R01      : 423 grants (51.7%)
+R03      :   8 grants ( 1.0%)
+R13      :   4 grants ( 0.5%)
+R18      :   1 grants ( 0.1%)
+R21      :  29 grants ( 3.5%)
+R25      :   4 grants ( 0.5%)
+R33      :   7 grants ( 0.9%)
+R34      :   2 grants ( 0.2%)
+R35      :  13 grants ( 1.6%)
+R37      :  21 grants ( 2.6%)
+R38      :   1 grants ( 0.1%)
+R50      :   2 grants ( 0.2%)
+R56      :   6 grants ( 0.7%)
+R61      :   3 grants ( 0.4%)
+RC2      :   1 grants ( 0.1%)
+RF1      :   1 grants ( 0.1%)
+S10      :   1 grants ( 0.1%)
+T32      :  17 grants ( 2.1%)
+TL1      :   2 grants ( 0.2%)
+U01      :  34 grants ( 4.2%)
+U10      :   8 grants ( 1.0%)
+U19      :  17 grants ( 2.1%)
+U24      :   8 grants ( 1.0%)
+UF1      :   1 grants ( 0.1%)
+UG1      :   2 grants ( 0.2%)
+UG3      :   3 grants ( 0.4%)
+UH3      :   5 grants ( 0.6%)
+UL1      :   3 grants ( 0.4%)
+
+Total unique grant types: 48
+
+==================================================
+GRANT TYPE ANALYSIS FOR JOB SEARCH
+==================================================
+
+HIGH-VALUE GRANT TYPES (Best for Computational Scientists):
+------------------------------------------------------------
+✓ P01      :  16 grants ( 2.0%) - Program project grants
+✓ P30      :  43 grants ( 5.3%) - Center core grants (often computational cores)
+✓ P50      :  45 grants ( 5.5%) - Specialized centers (often computational cores)
+✓ R00      :   4 grants ( 0.5%) - New PI with fresh budget
+✓ R01      : 423 grants (51.7%) - Gold standard independent research
+✓ R35      :  13 grants ( 1.6%) - Outstanding investigator awards
+✓ R37      :  21 grants ( 2.6%) - Outstanding investigator (MERIT)
+✓ RC2      :   1 grants ( 0.1%) - High-impact, often computational
+✓ RF1      :   1 grants ( 0.1%) - Multi-year funded research projects
+✓ U01      :  34 grants ( 4.2%) - Cooperative agreements for team science
+✓ U19      :  17 grants ( 2.1%) - Large research program cooperatives
+✓ U24      :   8 grants ( 1.0%) - Resource cooperatives (often computational)
+✓ UF1      :   1 grants ( 0.1%) - Multi-year cooperative agreements
+✓ UG3      :   3 grants ( 0.4%) - Exploratory cooperative agreements
+✓ UH3      :   5 grants ( 0.6%) - Research cooperative agreements
+
+High-Value Summary: 15 types, 635 grants (77.6% of total)
+
+OTHER GRANT TYPES (Lower priority for computational roles):
+-------------------------------------------------------
+  F30      :   6 grants ( 0.7%)
+  F31      :  10 grants ( 1.2%)
+  F32      :   2 grants ( 0.2%)
+  F99      :   1 grants ( 0.1%)
+  K01      :  12 grants ( 1.5%)
+  K07      :   1 grants ( 0.1%)
+  K08      :  11 grants ( 1.3%)
+  K12      :   2 grants ( 0.2%)
+  K23      :  22 grants ( 2.7%)
+  K24      :   2 grants ( 0.2%)
+  K25      :   1 grants ( 0.1%)
+  K76      :   1 grants ( 0.1%)
+  K99      :   7 grants ( 0.9%)
+  KL2      :   1 grants ( 0.1%)
+  N01      :   1 grants ( 0.1%)
+  P20      :   3 grants ( 0.4%)
+  R03      :   8 grants ( 1.0%)
+  R13      :   4 grants ( 0.5%)
+  R18      :   1 grants ( 0.1%)
+  R21      :  29 grants ( 3.5%)
+  R25      :   4 grants ( 0.5%)
+  R33      :   7 grants ( 0.9%)
+  R34      :   2 grants ( 0.2%)
+  R38      :   1 grants ( 0.1%)
+  R50      :   2 grants ( 0.2%)
+  R56      :   6 grants ( 0.7%)
+  R61      :   3 grants ( 0.4%)
+  S10      :   1 grants ( 0.1%)
+  T32      :  17 grants ( 2.1%)
+  TL1      :   2 grants ( 0.2%)
+  U10      :   8 grants ( 1.0%)
+  UG1      :   2 grants ( 0.2%)
+  UL1      :   3 grants ( 0.4%)
