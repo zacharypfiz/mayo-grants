@@ -35,7 +35,7 @@ uv run --with requests fetch_grants.py
 
 ## Timing Filters
 The script automatically filters for grants with optimal hiring timing:
-- **2+ years remaining** (plenty of budget left)
+- **1.5+ years remaining** (plenty of budget left)
 - **Started within last year** (fresh funding, likely hiring)
 
 ## Key Statistics
