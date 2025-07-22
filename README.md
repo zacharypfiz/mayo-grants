@@ -39,10 +39,10 @@ The script automatically filters for grants with optimal hiring timing:
 - **Started within last year** (fresh funding, likely hiring)
 
 ## Key Statistics
-- **309 hiring-relevant grants** identified
-- **$203,714,627 total funding** ($659,271 average per grant)
-- **245 R01 grants** (79%) - independent researchers with hiring authority
-- **11 P30/P50 center grants** - highest computational hiring probability
+- **197 hiring-relevant grants** identified
+- **$132,788,130 total funding** ($674,051 average per grant)
+- **156 R01 grants** (79%) - independent researchers with hiring authority
+- **7 P30/P50 center grants** - highest computational hiring probability
 
 ## Target Recommendations
 1. **P30/P50 centers** - Often have computational cores

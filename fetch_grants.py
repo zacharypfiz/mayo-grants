@@ -7,7 +7,7 @@ from datetime import datetime
 def is_hiring_relevant(project):
     """
     Check if grant has optimal timing for hiring:
-    - 2+ years remaining OR started within last year
+    - 1.5+ years remaining OR started within last year
     """
     try:
         today = datetime.now()
@@ -21,7 +21,7 @@ def is_hiring_relevant(project):
         project_end = datetime.strptime(project_end_str[:10], '%Y-%m-%d')
         years_remaining = (project_end - today).days / 365.25
         
-        if years_remaining >= 2.0:
+        if years_remaining >= 1.5:
             return True
         
         if project_start_str:
@@ -74,7 +74,7 @@ def fetch_mayo_grants():
     
     print("Fetching Mayo Rochester grants...")
     print(f"Grant types: {', '.join(gold_tier_types)}")
-    print("Filter: 2+ years remaining OR started within last year")
+    print("Filter: 1.5+ years remaining OR started within last year")
     print("=" * 60)
     
     while True:
@@ -157,7 +157,7 @@ def get_timing_reason(project):
         if project_end_str:
             project_end = datetime.strptime(project_end_str[:10], '%Y-%m-%d')
             years_remaining = (project_end - today).days / 365.25
-            if years_remaining >= 2.0:
+            if years_remaining >= 1.5:
                 return f"{years_remaining:.1f}y remaining"
         
         if project_start_str:
@@ -303,6 +303,43 @@ def analyze_results(projects):
         "center_grants": activity_counts.get("P30", 0) + activity_counts.get("P50", 0)
     }
 
+def deduplicate_by_project_title(projects):
+    """Keep only the most recent fiscal year for each unique project title"""
+    print(f"\nDeduplicating {len(projects)} projects by title...")
+    
+    title_groups = {}
+    for project in projects:
+        title = project.get("PROJECT_TITLE", "").strip()
+        if not title:
+            continue
+        
+        fy = project.get("FY", "").strip()
+        if not fy or not fy.isdigit():
+            continue
+        
+        fy_int = int(fy)
+        
+        if title not in title_groups:
+            title_groups[title] = []
+        title_groups[title].append((fy_int, project))
+    
+    deduplicated = []
+    duplicates_removed = 0
+    
+    for title, project_list in title_groups.items():
+        project_list.sort(key=lambda x: x[0], reverse=True)
+        most_recent_fy, most_recent_project = project_list[0]
+        deduplicated.append(most_recent_project)
+        
+        if len(project_list) > 1:
+            duplicates_removed += len(project_list) - 1
+            pi = most_recent_project.get("PI_NAMEs", "").split(';')[0].strip()
+            activity = most_recent_project.get("ACTIVITY", "")
+            print(f"  Kept FY{most_recent_fy} for: {activity} - {pi[:25]} - {title[:50]}...")
+    
+    print(f"Removed {duplicates_removed} duplicates, kept {len(deduplicated)} unique projects")
+    return deduplicated
+
 def main():
     """Main function"""
     print("Mayo Rochester - Hiring-Relevant Gold Tier Grants")
@@ -320,11 +357,12 @@ def main():
         print("No projects passed filters")
         return
     
-    save_to_csv(processed, "mayo_grants.csv")
-    stats = analyze_results(processed)
+    deduplicated_processed = deduplicate_by_project_title(processed)
+    save_to_csv(deduplicated_processed, "mayo_grants.csv")
+    stats = analyze_results(deduplicated_processed)
     update_readme(stats)
     
-    print(f"\nSuccess! {len(processed)} hiring-relevant grants saved to mayo_grants.csv")
+    print(f"\nSuccess! {len(deduplicated_processed)} hiring-relevant grants saved to mayo_grants.csv")
 
 if __name__ == "__main__":
     main() 
