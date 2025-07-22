@@ -49,3 +49,6 @@ The script automatically filters for grants with optimal hiring timing:
 2. **Recent R01s** - Fresh budgets, new projects
 3. **U24/U01 cooperatives** - Need technical infrastructure
 4. **Search by keywords** in PROJECT_TITLE and PHR fields
+
+## Opportunities
+- Analyzed by LLM to find grants with computational opportunities.
